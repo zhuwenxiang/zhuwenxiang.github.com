@@ -1,0 +1,11 @@
+markdown: rdiscount 
+permalink: /:year/:month/:day/:title 
+title: Meroa
+url: http://meroa.com
+subscribe: http://meroa.com/feed.xml
+exclude: [ README.md, newpost.rb ]
+domain: meroa.com
+email: meroa+blog@gmail.com
+auto: true
+googleAnalyticsID: UA-5531632-0
+disqusShortname: zhuwenxiang
