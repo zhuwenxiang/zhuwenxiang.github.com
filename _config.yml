@@ -5,7 +5,7 @@ url: http://meroa.com
 subscribe: http://meroa.com/feed.xml
 exclude: [ README.md, newpost.rb ]
 domain: meroa.com
-email: meroa+blog@gmail.com
+email: meroa.com@gmail.com
 auto: true
 googleAnalyticsID: UA-5531632-0
 disqusShortname: zhuwenxiang
