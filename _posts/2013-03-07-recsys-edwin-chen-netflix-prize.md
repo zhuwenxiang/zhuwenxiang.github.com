@@ -1,12 +1,12 @@
 ---
-layout: post
+date: 2007-07-05 02:57:26
 title: [译]Edwin Chen关于Netflix Prize的总结
-date: 2012-12-12 18:51
-comments: true
-categories:
-    Quora
+layout: post
 tags:
-    推荐系统
+    - 推荐系统
+    - Quora
+categories:
+    - 转载
 ---
 我试着在这里说些想法。矩阵分解技术和模型组合方法可能是与Netflix Prize有关最多被讨论的算法，但我们也使用了很多其他的洞见。
 （注意：这里我略过了很多东西，实际模型通常要复杂得多得多，因此别把这当成最后的总结。）
