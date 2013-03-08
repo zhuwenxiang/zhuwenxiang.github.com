@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 标准建模流程(2): 变量选择
+title: 标准建模流程之变量选择
 date: 2011-10-04 14:47
 comments: true
 categories: []

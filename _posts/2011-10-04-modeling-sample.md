@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 标准建模流程(1): 样本选择
+title: 标准建模流程之样本选择
 date: 2011-10-04 14:52
 comments: true
 categories: []

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “财迷老道”的盈利模式
+title: 财迷老道的盈利模式
 date: 2011-10-29 12:32
 comments: true
 categories: []

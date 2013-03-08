@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 刀片+刀架的定价策略
+title: 刀片刀架式的定价策略
 date: 2011-10-27 23:36
 comments: true
 categories: 经济学

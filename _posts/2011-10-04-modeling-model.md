@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 标准建模流程(3): 模型选择
+title: 标准建模流程之模型选择
 date: 2011-10-04 14:59
 comments: true
 categories: []
