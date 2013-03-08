@@ -6,7 +6,7 @@ comments: true
 categories: 概率
 ---
 <pre>[latexpage]</pre>
-<pre>[解法1]
+<pre>解法1
 Lemma1: $1+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\frac{1}{5^2}+\ldots=\frac{{\pi}^2}{6}$
 Lemma2: 若任意两个自然数互素的概率为$p$，则任意两个自然数最大公约数为k的概率为$p*\frac{1}{k^2}$
 Lemma1来自数学分析。Lemma2的证明我们分为两点。</pre>
@@ -17,7 +17,7 @@ Lemma1来自数学分析。Lemma2的证明我们分为两点。</pre>
 根据Lemma任意两个自然数不互素的概率为1-p，也是有大于2的最大公因子(不妨设为k)的概率。</pre>
 <pre>对k取大于2的全部自然数有$p*\frac{1}{2^2}+p*\frac{1}{3^2}+\ldots=1-p$，变换即可。
 
-[解法2]
+解法2
 设任意两个自然数为m,n。$\{p_k\}$为所有素数的集合。一个自然数有因子$p_k$的概率为$\frac{1}{p_k}$。</pre>
 <pre>m,n同时有因子$p_k$的概率为$\frac{1}{(p_k)^2}$。所以m,n不同时有因子$p_k$的概率为$1-\frac{1}{(p_k)^2}$。</pre>
 <pre>所谓的m,n互素，即对于所有的k，两者不同时有因子$p_k$。显然这个概率就是$\prod_{k=1}^{\infty}(1-\frac{1}{(p_k)^2})$</pre>
