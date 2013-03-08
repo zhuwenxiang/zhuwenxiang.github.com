@@ -51,4 +51,4 @@ fanhuagui(0.3,0.8,20,4)
 fanhuagui(0.1,1.2,20,4)</pre>
 代码中几个例子画出的图：
 
-<a href="http://www.zhuwenxiang.com/wp-content/uploads/2011/08/fanhuagui_1.jpg"><img class="alignleft size-full wp-image-73" title="fanhuagui_1" src="http://www.zhuwenxiang.com/wp-content/uploads/2011/08/fanhuagui_1.jpg" alt="" width="965" height="967" /></a>
+<a href="http://h.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=b1d46dec3b87e9504617f3692003227e/3bf33a87e950352ac18847275243fbf2b2118b37.jpg?referer=beeccc4f4ec2d562ab1fe4ddf5ed&x=.jpg"><img class="alignleft size-full wp-image-73" title="fanhuagui_1" src="http://www.zhuwenxiang.com/wp-content/uploads/2011/08/fanhuagui_1.jpg" alt="" width="965" height="967" /></a>
