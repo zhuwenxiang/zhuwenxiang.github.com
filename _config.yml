@@ -1,11 +1,11 @@
 markdown: rdiscount
 permalink: /:year/:month/:day/:title 
-title: Meroa
+title: Life is a supermartingale
 url: http://meroa.com
 subscribe: http://meroa.com/feed.xml
 exclude: [ README.md, newpost.rb ]
 domain: meroa.com
-email: exbf@vip.qq.com
+email: zhuwenxiang@gmail.com
 auto: true
 googleAnalyticsID: UA-593131-4
 disqusShortname: zhuwenxiang
