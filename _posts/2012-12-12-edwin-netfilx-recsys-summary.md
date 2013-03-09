@@ -4,8 +4,7 @@ title: Edwin Chen关于Netflix Prize的总结（译）
 date: 2012-12-12 18:51
 comments: true
 categories: 
-    - 推荐系统
-    - 翻译
+    - 统计建模
 ---
 
 我试着在这里说些想法。矩阵分解技术和模型组合方法可能是与Netflix Prize有关最多被讨论的算法，但我们也使用了很多其他的洞见。
@@ -114,4 +113,4 @@ categories:
 
 最后。距我完成Netflix Prize的论文已经有一段时间了，记忆与笔记都较粗略，非常欢迎指正和建议。
 
-以上内容由我翻译自<a href="http://www.quora.com/Netflix-Prize/Is-there-any-summary-of-top-models-for-the-Netflix-prize">Quora</a>
+以上内容翻译自<a href="http://www.quora.com/Netflix-Prize/Is-there-any-summary-of-top-models-for-the-Netflix-prize">Quora</a>
