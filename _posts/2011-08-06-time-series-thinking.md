@@ -3,7 +3,7 @@ layout: post
 title: 我对时间序列的理解
 date: 2011-08-06 20:08
 comments: true
-categories: 统计
+categories: 概率统计
 ---
 <pre>[latexpage]</pre>
 <pre>所谓时间序列，指的是按时间顺序排列一组随机变量。一般记作$\{...X_1,X_2,X_3,...\}$，也可

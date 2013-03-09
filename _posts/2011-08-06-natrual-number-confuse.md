@@ -3,7 +3,7 @@ layout: post
 title: 所有自然数排成乱序的概率有多大
 date: 2011-08-06 20:13
 comments: true
-categories: []
+categories: 概率统计
 ---
 <pre>[latexpage]</pre>
 <pre>所有的自然数参与排序，但都不在自己序号的位置（乱序）的概率。我们把上面这个问题具体
