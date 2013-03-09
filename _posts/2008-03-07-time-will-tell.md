@@ -5,8 +5,6 @@ date: 2008-03-07 22:41
 comments: true
 categories:
     - 影评
-tags:
-    - 甜蜜蜜
 ---
 
 今晚又看了一遍《甜蜜蜜》。 
