@@ -569,4 +569,4 @@ categories: []
 <p align="left">这个方程预测金牌数为49枚。如果反感手动删除数据，可以使用中位数回归，即quantreg包中rq()函数，然后基于中位数建模，得到的回归方程是：</p>
 <p align="left">东道主本届金牌数=3.65+1.56×上届金牌数</p>
 <p align="left">这个方程预测金牌数为53-54枚。而实际上在2008年奥运结束的前一晚，中国队的金牌总数才刚好达到49枚。因为男子跳台丢了金牌，所以悬念留到最后1天，最终中国队的金牌数字是51。当然这个只是给了一个很粗略的估计，但似乎已经比当时所有来自专家的预测都靠谱多了。可见只要变量选得好，线性模型的预测效力是很靠谱的。而从下图可以看出，其实得出这个预测结论并非如想像中那么显然。</p>
-<p align="left"><a href="http://www.zhuwenxiang.com/wp-content/uploads/2011/12/lm.png"><img class="alignleft size-full wp-image-348" title="lm" src="http://www.zhuwenxiang.com/wp-content/uploads/2011/12/lm.png" alt="" width="529" height="398" /></a></p>
+<p align="left"><a href=""><img class="alignleft size-full wp-image-348" title="lm" src="http://e.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=5ae62bd791529822013339c6e7f10af6/08f790529822720e1036f5ea7acb0a46f21fab21.jpg?referer=e73790319213b07ee4aa643815ff&x=.jpg" alt="" width="529" height="398" /></a></p>
