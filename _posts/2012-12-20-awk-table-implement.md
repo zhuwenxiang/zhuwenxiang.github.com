@@ -7,6 +7,7 @@ categories:
     - awk
 ---
 有时候懒得打开R重复read然后table的过程，可以使用如下方法，先看文件格式：
+<pre class="brush: shell; gutter: true">
 cat file
 A 235
 B 698
@@ -18,6 +19,7 @@ A 1000
 C 1578
 B 1899
 C 2000
+</pre>
 ##table之一维统计
 要求统计file中第一列的分布
 <pre class="brush: shell; gutter: true">
