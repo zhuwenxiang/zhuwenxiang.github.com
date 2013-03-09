@@ -3,7 +3,7 @@ layout: post
 title: 标准建模流程之样本选择
 date: 2011-10-04 14:52
 comments: true
-categories: []
+categories: 统计建模
 ---
 <p align="left">建模过程中，一个好的通用性模型对建模样本就有一定的要求：</p>
 <p align="left">1)   样本个数:</p>
