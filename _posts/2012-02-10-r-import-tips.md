@@ -3,7 +3,7 @@ layout: post
 title: R数据读取的几点tips
 date: 2012-02-10 18:57
 comments: true
-categories: []
+categories: R
 ---
 1. read.table()、read.csv()适合读取小规模的数据框，但不是一种有效地读取大数值矩阵的方法，这种场合要使用更为底层的read.delim()甚至scan()函数。
 
