@@ -3,7 +3,7 @@ layout: post
 title: R的高性能计算
 date: 2011-11-04 01:55
 comments: true
-categories: []
+categories: R
 ---
 <a href="http://cran.r-project.org/web/views/HighPerformanceComputing.html">高性能计算</a>一直是R语言的瓶颈，诸如单进程、所有数据常驻内存等缺点也一直困扰着我。但随着对开源事业支持的不断增强，包括R核心开发小组在半年钱R 2.13版本中加入了编译功能包 compiler，在刚发布的R 2.14版本中又加入了官方分布式算法包 parallel，以及 <a href="http://www.oracle.com/technetwork/articles/datawarehouse/saternos-r-161569.html">Oracle</a>、<a href="http://ml.stat.purdue.edu/rhipe/">Hadoop</a>等厂商及平台提供越来越多的支持，这个瓶颈正有望逐步得到解决。
 
