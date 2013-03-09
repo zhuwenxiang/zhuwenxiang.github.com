@@ -5,7 +5,7 @@ date: 2012-04-30 14:54
 comments: true
 categories: []
 ---
-<a href="http://www.zhuwenxiang.com/wp-content/uploads/2012/04/count_circles.jpg"><img class="size-full wp-image-501 alignnone" title="count_circles" src="http://www.zhuwenxiang.com/wp-content/uploads/2012/04/count_circles.jpg" alt="" width="544" height="360" /></a>
+<a href=""><img class="size-full wp-image-501 alignnone" title="count_circles" src="http://f.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=f98ab5cef11f3a295ec8d5cba91ecd0c/95eef01f3a292df59520b805bd315c6034a8733a.jpg?referer=bcc95e1e6609c93d5ee53ac7bdd8&x=.jpg" alt="" width="544" height="360" /></a>
 
 以上这个据说是学前班同学更擅长的题目，微博上有人表示逻辑性强的头脑确实不能解出来，其实未必。我们试着用线性模型来解决这个问题：等式右边的数字一定是根据左边的数字来的，那么假设每个数字对右侧的贡献是有规律的，即右侧数字~第1位+第2位+...+第4位数字。最后注意这里的x实际上是因子，因为它只能有0~9总计10个水平。
 
