@@ -20,7 +20,7 @@ uid2 f1 f2 f3 g1 g2
 uid3 f1 f2 f3 g1 g2
 uid4 f1 f2 f3 g1 g2
 
-shell方案：while read uid left;do echo "$uid ${left// $uid}";done <file
+shell方案：cat file|while read uid left;do echo "$uid ${left// $uid}";done 
 while读取变量时最后一个变量则代表剩下全部字符串（注意IFS指定分隔符）， $uid是第一个字符串，$left则是剩下所有。然后再对 $left中的含有 $uid 的进行全部替换为空。
 
 awk方案：awk '{uid=$1;gsub(" ?"uid,"");print uid""$0}' file
