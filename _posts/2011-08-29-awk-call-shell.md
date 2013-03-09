@@ -16,4 +16,5 @@ categories: awk
 2. awk '' "awkvar=$extvar" filename #BEGIN段不可用
 3. 在awk表达式中使用'$extvar'
 4. 模式引用(在正则表达式中引用外部变量) '"$extvar"'
-5. 遍历外部数组(用于BEGIN段处理) awk -f 'BEGIN{for(i=1;i ex6. 引用环境变量 ENVIRON["environment variable"]
+5. 遍历外部数组(用于BEGIN段处理)  awk -f 'BEGIN{for(i=1;i<ARGC;i++)print ARGV[i]}' ${extarr[@]} 
+6. 引用环境变量 ENVIRON["environment variable"]
