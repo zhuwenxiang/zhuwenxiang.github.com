@@ -3,7 +3,7 @@ layout: post
 title: 从IP到Location的R函数
 date: 2011-12-23 17:15
 comments: true
-categories: []
+categories: R
 ---
 有时网站日志（access log）数据中会有当前这次访问的IP地址，蕴含的信息其实是当前访客的地理位置or电信服务商位置。我们知道在现实生活中，推荐或者促销的一个重要维度实际上是地理位置。这跟羽绒服&amp;加湿器在南方滞销而在北方就会畅销，制冷空调在南方畅销而在北方滞销是一个道理。因此如果可以实现从IP到Location的转换，就能可以用IP来一定程度上模拟出当前客户的地理位置。下面是国外网站上的一个API接口，实现了这种转换 <a href="http://www.datasciencetoolkit.org/ip2coordinates/125.39.132.33">http://www.datasciencetoolkit.org/ip2coordinates/125.39.132.33</a>
 
