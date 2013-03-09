@@ -3,7 +3,7 @@ layout: post
 title: 一个缺失值处理的经典坑
 date: 2012-03-28 01:35
 comments: true
-categories: []
+categories: 统计建模
 ---
 缺失值可能会导致错误的结果，但也可能是问题的答案（比如臭氧空洞），所以要仔细检查这些缺失才做相应处理。
 
