@@ -1,6 +1,6 @@
 ---
 layout: post
-title: awk如何引用shell
+title: awk如何引用shell命令与外部变量
 date: 2011-08-29 02:05
 comments: true
 categories: shell
