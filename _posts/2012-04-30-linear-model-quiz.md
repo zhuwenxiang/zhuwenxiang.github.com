@@ -3,7 +3,7 @@ layout: post
 title: 线性模型解决学前班问题
 date: 2012-04-30 14:54
 comments: true
-categories: []
+categories: 统计建模
 ---
 <a href=""><img class="size-full wp-image-501 alignnone" title="count_circles" src="http://f.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=f98ab5cef11f3a295ec8d5cba91ecd0c/95eef01f3a292df59520b805bd315c6034a8733a.jpg?referer=bcc95e1e6609c93d5ee53ac7bdd8&x=.jpg" alt="" width="544" height="360" /></a>
 
