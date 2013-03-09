@@ -3,7 +3,7 @@ layout: post
 title: shell日期计算tips
 date: 2011-09-21 10:06
 comments: true
-categories: shell
+categories: awk
 ---
 <strong>1. 如何计算 20120201前(或后)第30天（周\月\年）是哪天（周几）？</strong>
 
