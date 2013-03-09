@@ -3,7 +3,7 @@ layout: post
 title: R的函数式编程
 date: 2012-03-28 00:12
 comments: true
-categories: []
+categories: R
 ---
 R语言继承自两门语言：S/S-PLUS 和 Scheme。 前者是贝尔实验室开发的用于统计分析的解释性语言，S即是Statistics的缩写，Splus是基于S语言的商业软件。后者Scheme是Lisp的一种方言，其特点是没有数据和代码之分，利用各种嵌套递归自己建造自己，高度抽象和数学化。比如退出R环境的命令用q()就类似Scheme。在这里暂不提来自S的那一边，考虑R与另一边即Scheme的联系：R 的向量化、函数式编程就都继承自这一方。函数式编程，即函数也是数据的思想，可以用函数返回自己需要的函数，可以提高编码效率，避免代码的复制粘贴。先举个简单例子予以说明：
 <pre class="brush: r; gutter: true">Power &lt;- function(n){
