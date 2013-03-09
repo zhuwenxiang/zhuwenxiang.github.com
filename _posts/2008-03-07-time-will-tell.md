@@ -4,7 +4,10 @@ title: 相逢的人会再相逢
 date: 2008-03-07 22:41
 comments: true
 categories:
+    - 生活
+tags:
     - 影评
+    
 ---
 
 今晚又看了一遍《甜蜜蜜》。 
