@@ -5,11 +5,11 @@ date: 2012-05-05 22:25
 comments: true
 categories: []
 ---
-<a href="http://www.zhuwenxiang.com/wp-content/uploads/2012/05/图片11.png"><img class="alignnone size-full wp-image-538" title="图片1" src="http://www.zhuwenxiang.com/wp-content/uploads/2012/05/图片11.png" alt="" width="379" height="282" /></a>
+<a href=""><img class="alignnone size-full wp-image-538" title="独立的时间序列" src="http://a.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=229bf6a8d53f8794d7ff482be2207fc9/d788d43f8794a4c2cdc0f23b0ff41bd5ad6e393a.jpg?referer=b39158d0f636afc3571b0b5587d8&x=.jpg" alt="" width="379" height="282" /></a>
 
 上图是两个独立的模拟时间序列。可能会很容易认为红线和黑线二者有依赖关系，尤其是线性回归还支持这一结论（如下图）。而真实原因是因为他们都是时间序列！如果做相关性检验则只考虑了他们距离零点的距离，不确定性被低估了，同样会得出二者“相关”的错误结论。你可能会觉得很奇怪，虽然上面的例子暗示出二者很强的相关性，却明明是独立的（如下面R的例子，使我们造出来的独立）。实际上这就涉及到了统计学为什么引入时间序列的意义。当模型是时间的函数和一个普通的噪声叠加时，普通的统计回归就够用了，此谓显式时间依赖。当一个时间点与另外时间点所发生的存在依赖性时，是时间序列才能处理的问题，就是所谓的隐式时间依赖。“时间序列之间的回归”告诉我们：有些事情你回归不了。
 
-<a href="http://www.zhuwenxiang.com/wp-content/uploads/2012/05/图片2.png"><img title="图片2" src="http://www.zhuwenxiang.com/wp-content/uploads/2012/05/图片2.png" alt="" width="379" height="282" /></a>
+<a href=""><img title="回归不得哟" src="http://b.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=a9ea053f94cad1c8d4bbfc224f051634/241f95cad1c8a78650b35f1e6609c93d70cf5000.jpg?referer=90808b38962bd4071bd0e6cd901e&x=.jpg" alt="" width="379" height="282" /></a>
 
 这是一个用R写的例子：
 <pre class="brush: r; gutter: true">n=100   # 观测的数量
