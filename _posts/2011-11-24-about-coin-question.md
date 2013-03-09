@@ -3,7 +3,7 @@ layout: post
 title: 两道硬币面试题
 date: 2011-11-24 14:26
 comments: true
-categories: []
+categories: 概率统计
 ---
 Q1: 一个均匀硬币不断抛啊抛，假如抛个100次，那么连续抛出同一面的次数，这个次数最多是多少？
 <pre class="brush: r; gutter: true">coin.len = function(v) {
