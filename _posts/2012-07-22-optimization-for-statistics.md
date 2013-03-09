@@ -3,7 +3,7 @@ layout: post
 title: 最优化之于统计
 date: 2012-07-22 22:43
 comments: true
-categories: []
+categories: 概率统计
 ---
 最优化，即给定一个函数，寻找给定集合中的一个元素，取得函数值最小化或最大化。常见的最优化问题里一般会出现s.t.这是subject to的缩写，受约束的意思。
 

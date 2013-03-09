@@ -3,7 +3,7 @@ layout: post
 title: 属于你的R
 date: 2012-05-28 23:17
 comments: true
-categories: []
+categories: R
 ---
 Linux下的R用户可以自由定制自己的环境。首先由环境变量R_PROFILE指定初始化文件位置，它的优先级最高；如果该变量没有设置，则找到R安装目录下的子目录etc里的Rprofile.site文件，优先级其次。在此之后再通过查找当前目录下添加的.Rprofile文件（如果没有则去当前用户的根目录下找）来实现，优先级最低。还有两个特殊的函数，包括对话开始时自动执行的.First()可用于初始化环境，以及对话结束时自动执行的.Last()可用于保存环境。举个例子，比如我们在~/.Rprofile文件里写入函数就有如下功能。
 <pre class="brush: r; gutter: true">.First &lt;- function() {

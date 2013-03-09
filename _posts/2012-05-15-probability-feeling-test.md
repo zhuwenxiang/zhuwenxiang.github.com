@@ -3,7 +3,7 @@ layout: post
 title: 概率论感觉测试（转）
 date: 2012-05-15 14:45
 comments: true
-categories: []
+categories: 概率统计
 ---
 <strong>概率论感觉测试（一）</strong>
 

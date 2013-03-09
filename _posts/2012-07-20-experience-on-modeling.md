@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 数据建模的几点体会
+title: 数据建模的体会
 date: 2012-07-20 21:27
 comments: true
-categories: []
+categories: 统计建模
 ---
 <ol>
 	<li>严格的理论基础可遇不可求，在实际操作和真实数据中最容易获得灵感思路甚至解决方案。</li>

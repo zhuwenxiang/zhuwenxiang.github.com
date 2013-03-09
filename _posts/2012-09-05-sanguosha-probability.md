@@ -3,7 +3,8 @@ layout: post
 title: 一道三国杀概率题的三种解法
 date: 2012-09-05 12:39
 comments: true
-categories: []
+categories: 
+    - 概率统计
 ---
 今天组里有同学问：三国杀108张牌随机均分成三份，两张诸葛连弩在同一份的概率是多少？大家群策群力给出三种解法。
 

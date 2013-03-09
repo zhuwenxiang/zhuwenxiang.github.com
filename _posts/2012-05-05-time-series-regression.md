@@ -3,7 +3,7 @@ layout: post
 title: 时间序列之间的回归
 date: 2012-05-05 22:25
 comments: true
-categories: []
+categories: 统计建模
 ---
 <a href=""><img class="alignnone size-full wp-image-538" title="独立的时间序列" src="http://a.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=229bf6a8d53f8794d7ff482be2207fc9/d788d43f8794a4c2cdc0f23b0ff41bd5ad6e393a.jpg?referer=b39158d0f636afc3571b0b5587d8&x=.jpg" alt="" width="379" height="282" /></a>
 

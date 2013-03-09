@@ -3,7 +3,7 @@ layout: post
 title: 最不可思议的事实有哪些（译）
 date: 2012-10-18 19:27
 comments: true
-categories: Quora
+categories: 翻译
 ---
 剑龙和暴龙差的年代比暴龙和我们差的年代还久。
 
