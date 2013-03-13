@@ -3,7 +3,7 @@ permalink: /:year/:month/:day/:title
 title: Meroa
 url: http://meroa.com
 subscribe: http://meroa.com/feed.xml
-exclude: [ README.md, newpost.rb ]
+exclude: [ README.md, newpost.rb, template.markdown ]
 domain: meroa.com
 email: zhuwenxiang@gmail.com
 auto: true
