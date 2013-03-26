@@ -69,11 +69,9 @@
 <script src="/assets/js/bootstrap-typeahead.js"></script>
 <script src="/assets/js/google-code-prettify/prettify.js"></script>
 
-{% if page.isMath %}
+{% if page.isMath == 1 %}
 <!-- MathJax support -->
-<script type="text/javascript" 
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
