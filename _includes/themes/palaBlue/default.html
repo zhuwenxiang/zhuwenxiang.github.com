@@ -68,7 +68,22 @@
 <script src="/assets/js/bootstrap-carousel.js"></script>
 <script src="/assets/js/bootstrap-typeahead.js"></script>
 <script src="/assets/js/google-code-prettify/prettify.js"></script>
+
+{% if page.isMath %}
+<!-- MathJax support -->
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+
+    </script>
+{% endif %}
+
 {% if page.url != "/" %}
+<!-- Fast Left and Right -->
 <script>
 $(function(){
   $(document).keydown(function(e) {
@@ -90,6 +105,7 @@ $(function(){
 })
 </script>
 {% endif %}
+
 <script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', '{{site:googleAnalyticsID}}']);
