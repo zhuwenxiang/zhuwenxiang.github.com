@@ -1,9 +1,9 @@
 markdown: rdiscount
-permalink: /:year/:month/:day/:title 
+permalink: /:title
 title: Meroa
 url: http://meroa.com
 subscribe: http://meroa.com/feed.xml
-exclude: [ README.md, newpost.rb, template.markdown ]
+exclude: [ README.md ]
 domain: meroa.com
 email: zhuwenxiang@gmail.com
 auto: true
