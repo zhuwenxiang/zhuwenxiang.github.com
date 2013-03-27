@@ -8,7 +8,7 @@ isMath: 1
 ---
 从正态出发几乎可以得到能想到的所有种类的概率分布，正如同维基百科上一张图所显示的那样
 
-<img class="alignnone" alt="" src="http://a.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=afefd4ad77c6a7efbd26a823cdc1de6c/91ef76c6a7efce1bd5e8b9b8ae51f3deb58f6584.jpg?referer=eee0ec91fc1f4134b920314ec39a&x=.jpg" width="1183" height="625" />
+<img class="alignnone" alt="" src="http://upload.wikimedia.org/wikipedia/commons/6/69/Relationships_among_some_of_univariate_probability_distributions.jpg" width="1183" height="625" />
 
 <p>那么这到底是为什么？在一本冷僻的叫做《组成论》的书里（张学文著，2003，中国科学技术大学出版社）给出了我认为比较合理的一个答案。这本书研究了各个领域的概率分布问题，把常用的概率分布的形成机理都从最大熵原理去解释了个遍，发现所有的概率分布都可以概括为该原理在不同场合配合不同的约束条件下的必然结果。举正态分布为例：一个连续变量x的概率密度分布函数是f(x)，那么这个函数的积分应当等于1即\({\int_{-\infty}^{+\infty}{f(x)}\,\mathrm{d}x=1}\)</p>
 <p>如果假设该随机变量有一定的波动范围，则标准差必须为一个固定值\(sigma\)</p>
