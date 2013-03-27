@@ -5,8 +5,6 @@ date: 2010-01-27 03:06
 comments: true
 categories:
     - 生活
-tags:
-    - 校园
 ---
 
 老大、张可和马乐走了好些天了。

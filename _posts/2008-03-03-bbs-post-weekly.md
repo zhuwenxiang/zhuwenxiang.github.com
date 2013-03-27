@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 什么时候，我们偷偷地老去
+title: 什么时候我们偷偷地老去
 date: 2008-03-03 19:37
 comments: true
 categories: 生活
