@@ -3,44 +3,25 @@ layout: post
 title: 小议概率分布的统一
 date: 2013-02-23 16:08
 comments: true
-categories: 
-    - 概率统计
+categories: 概率统计
+isMath: 1
 ---
 从正态出发几乎可以得到能想到的所有种类的概率分布，正如同维基百科上一张图所显示的那样
 
-<img class="alignnone" alt="" src="http://upload.wikimedia.org/wikipedia/commons/6/69/Relationships_among_some_of_univariate_probability_distributions.jpg" width="1183" height="625" />
+<img class="alignnone" alt="" src="http://a.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=afefd4ad77c6a7efbd26a823cdc1de6c/91ef76c6a7efce1bd5e8b9b8ae51f3deb58f6584.jpg?referer=eee0ec91fc1f4134b920314ec39a&x=.jpg" width="1183" height="625" />
 
-那么这到底是为什么？在一本冷僻的叫做《组成论》的书里（张学文著，2003，中国科学技术大学出版社）给出了我认为比较合理的一个答案。这本书研究了各个领域的概率分布问题，把常用的概率分布的形成机理都从最大熵原理去解释了个遍，发现所有的概率分布都可以概括为该原理在不同场合配合不同的约束条件下的必然结果。举正态分布为例：一个连续变量x的概率密度分布函数是f(x)，那么这个函数的积分应当等于1即
-[latexpage]
-\[
-{\int_{-\infty}^{+\infty}{f(x)}\,\mathrm{d}x=1}
-\]
-如果假设该随机变量有一定的波动范围，则标准差必须为一个固定值σ即
-[latexpage]
-\[
-{\int_{-\infty}^{+\infty}{(x-a)^2f(x)}\,\mathrm{d}x=\sigma^2}
-\]
-如果f仅受上面的约束且x具随机性，在此约束下的随机性最大也就是其对应的信息熵最大即
-[latexpage]
-\[
-{\int_{-\infty}^{+\infty}{-f(x)ln(f(x))}\,\mathrm{d}x}
-\]
-应当最大。利用拉哥朗日方法构造新函数F
-[latexpage]
-\[
-F={\int{-f(x)ln(f(x))}\,\mathrm{d}x}+C_1[{\int{f(x)}\,\mathrm{d}x}-1]+C_2[{\int{(x-a)^2f(x)}\,\mathrm{d}x}-\sigma^2]]
-\]
-以上积分应当遍历变量x的一切可能值（也就是从负无穷大积分到正无穷大），极值点就是要求函数F对f的变分为零，得到
-[latexpage]
-\[
-\frac{\partial{F}}{\partial{f}}=0
-\]
-\[
-\Rightarrow{-ln(f(x))-1+C_1+C_2(x-a)^2=0}
-\]
-\[
-\Rightarrow{f(x)=e^{-1+C_1+C_2(x-a)^2}}
-\]
+<p>那么这到底是为什么？在一本冷僻的叫做《组成论》的书里（张学文著，2003，中国科学技术大学出版社）给出了我认为比较合理的一个答案。这本书研究了各个领域的概率分布问题，把常用的概率分布的形成机理都从最大熵原理去解释了个遍，发现所有的概率分布都可以概括为该原理在不同场合配合不同的约束条件下的必然结果。举正态分布为例：一个连续变量x的概率密度分布函数是f(x)，那么这个函数的积分应当等于1即\({\int_{-\infty}^{+\infty}{f(x)}\,\mathrm{d}x=1}\)</p>
+<p>如果假设该随机变量有一定的波动范围，则标准差必须为一个固定值\(sigma\)</p>
+
+<p>$${\int_{-\infty}^{+\infty}{(x-a)^2f(x)}\,\mathrm{d}x=\sigma^2}$$</p>
+<p>如果f仅受上面的约束且x具随机性，在此约束下的随机性最大也就是其对应的信息熵最大即</p>
+<p>$${\int_{-\infty}^{+\infty}{-f(x)ln(f(x))}\,\mathrm{d}x}$$</p>
+<p>应当最大。利用拉哥朗日方法构造新函数F</p>
+<p>$$F={\int{-f(x)ln(f(x))}\,\mathrm{d}x}+C_1[{\int{f(x)}\,\mathrm{d}x}-1]+C_2[{\int{(x-a)^2f(x)}\,\mathrm{d}x}-\sigma^2]]$$</p>
+<p>以上积分应当遍历变量x的一切可能值（也就是从负无穷大积分到正无穷大），极值点就是要求函数F对f的变分为零，得到</p>
+<p>$$\frac{\partial{F}}{\partial{f}}=0$$</p>
+<p>$$\Rightarrow{-ln(f(x))-1+C_1+C_2(x-a)^2=0}$$</p>
+<p>$$\Rightarrow{f(x)=e^{-1+C_1+C_2(x-a)^2}}$$</p>
 
 这个式子已具有正态的外型了，再利用约束把待定常数C1、 C2确定出来即可。这样我们就利用最大信息熵和标准差为常数的限制得到了正态分布的公式，说明对于确定的标准差，随机变量可以有很多种分布函数，但是复杂程度最大（信息熵最大）的分布函数就是正态分布。
 
