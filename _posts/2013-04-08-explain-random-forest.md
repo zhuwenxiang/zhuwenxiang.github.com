@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 随机森林是如何工作的（译）
+title: 随机森林是如何工作的
 date: 2013-04-08 10:24
 comments: true
 categories: 统计建模

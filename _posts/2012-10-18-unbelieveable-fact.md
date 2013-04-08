@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 最不可思议的事实有哪些（译）
+title: 最不可思议的事实有哪些
 date: 2012-10-18 19:27
 comments: true
 categories: 生活
