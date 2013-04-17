@@ -107,7 +107,7 @@ categories:
 （举例而言，当Bell和Koren在使用更早的混合方法时发现一件事，即当电影或者用户有少量评分时候RBMs更有用，而当电影或者用户有大量评分时矩阵分解方法更有用。）
 
 这是一张竞赛早期（2007年）的混合规模效应的图
-<a href=""><img class="alignnone size-full wp-image-696" title="netflix" src="http://h.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=fd034d0c10dfa9ecf92e561252eb863e/562c11dfa9ec8a136cf778f0f603918fa0ecc034.jpg?referer=d629cd0a6159252dfa00293420ea&x=.jpg" alt="" width="485" height="383" /></a>
+<a href="http://h.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=fd034d0c10dfa9ecf92e561252eb863e/562c11dfa9ec8a136cf778f0f603918fa0ecc034.jpg?referer=d629cd0a6159252dfa00293420ea&x=.jpg"><img class="alignnone size-full wp-image-696" title="netflix" src="http://h.hiphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=fd034d0c10dfa9ecf92e561252eb863e/562c11dfa9ec8a136cf778f0f603918fa0ecc034.jpg?referer=d629cd0a6159252dfa00293420ea&x=.jpg" alt="" /></a>
 
 然而我们要强调的是，没有必要用这么大量的模型也能做好。下面这个图显示RMSE作为使用方法数量的函数。少于50种方法就可以取得我们赢得比赛的分值（RMSE=0.8712），用最好的三种方法可以使RMSE小于0.8800，已经可以进入前十名。甚至只使用最好的单个模型就可以让我们以0.8890进入排行榜。这提示我们，为了赢得比赛使用大量模型是游泳的，但在实用上，优秀的系统可以只使用少数经过精心挑选的模型即可。
 
