@@ -9,17 +9,17 @@ categories: R
 <p align="left">例1：推荐系统实践中对一个关键feature“兴趣近似度”的计算。比如一批user去给一批item打分，比如u1的打分记录有t1, t2, ..., u2的打分记录有t2, t3, ...每个用户评分的item数目可能不等，要求输出一个表T, T(i, j)是用户 i 和 j 都打过分的item个数，实际上这可以粗略衡量二者兴趣上的近似。</p>
 <p align="left">先给出awk的解决方案：</p>
 首先需要根据访问记录record.txt即user-&gt;item对，来建立一个item的访问字典，用来记录每个item都被哪些user打分过，即item-&gt;{user_set}。然后根据一个文件被打分的记录集合{user_set}得到所有共同出现过的user对。最后基于user字典遍历user对，给每一对打分过某item的用户的相应计数加1，这样就完成了计数。record.txt的内容是：
-a 1
-a 2
-a 3
-a 4
-b 1
-b 3
-b 4
-c 1
-c 4
-d 2
-d 3
+>a 1<br>
+a 2<br>
+a 3<br>
+a 4<br>
+b 1<br>
+b 3<br>
+b 4<br>
+c 1<br>
+c 4<br>
+d 2<br>
+d 3<br>
 
 统计共同评分的stat.sh代码如下：
 <pre class="brush: bash; gutter: true">#/bin/bash
@@ -50,11 +50,11 @@ awk &#039;BEGIN{
               }
 }&#039;</pre>
 结果是：
-a b 3
-a c 2
-a d 2
-b c 2
-b d 1
+>a b 3<br>
+a c 2<br>
+a d 2<br>
+b c 2<br>
+b d 1<br>
 <p align="left">awk或者更高级的语言如python都可以使用dict(字典)那样的数据结构，但这个表面上可能需要依靠数据结构才能解决的问题，我们可以用R给出一个更漂亮的解答。给出代码之前，先做点数学上的分析。令F是一个矩阵，F(u, t) = 1代表u打分过t，否则F(u, t) = 0。那么T其实就可以写成：T(u1, u2) = sum_t F(u1, t) F(u2, t) ，其中sum_t表示按t遍历求和。容易看地出这就是u1, u2都打过分的item，写成矩阵形式就是：T = F * F'</p>
 我们只用两行R代码就可以解决这个问题，其中还有一行是读数据
 <pre class="brush: r; gutter: false">&gt; record&lt;-read.table(&quot;record.txt&quot;)
