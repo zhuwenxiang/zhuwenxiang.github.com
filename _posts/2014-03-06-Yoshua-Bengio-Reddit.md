@@ -7,7 +7,7 @@ categories:
     - 统计建模
 ---
 
-Deep Learning学术界的三架马车，目前[Geoffrey Hinton](https://www.cs.toronto.edu/~hinton/‎)已被Google 收编，[Yann LeCun](http://yann.lecun.com/)已被Facebook收编，还留在学术界的[Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html)最近心情好，在[reddit](http://www.reddit.com/r/MachineLearning/comments/1ysry1/ama_yoshua_bengio/)上开帖定期回答问题。我抽取了一些有料的回答在下面，希望对大家了解这方面有帮助（再不上船可就晚了）。
+Deep Learning学术界的三架马车，目前[Geoffrey Hinton](https://www.cs.toronto.edu/~hinton/‎)已被Google收编，[Yann LeCun](http://yann.lecun.com/)已被Facebook收编，还留在学术界的[Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html)最近心情好，在[reddit](http://www.reddit.com/r/MachineLearning/comments/1ysry1/ama_yoshua_bengio/)上开帖定期回答问题。我抽取了一些有料的回答在下面，希望对大家了解这方面有帮助。
 
 * 最近掀起的深度学习浪潮，只能表明机器学习界浪费了很多年没去探索它，尤其1996-2006这十年。（吐槽深度学习大热）
 
@@ -35,4 +35,4 @@ Deep Learning学术界的三架马车，目前[Geoffrey Hinton](https://www.cs.t
 
 * 我相信大脑的大部分工作是尽量把我们的经验变得一致(coherence), 以建立一个关于世界的更好模型。
 
-关于深度学习的革命性再怎么强调都不为过。除了在现有的图像语音识别中不断刷新state-of-the-art之外，在Google, 使用深度学习的AI给机器随机“看”了1000万个Youtube视频。你猜它看到了什么？猫的脸！在百度，使用深度学习的广告CTR预估模型用kilo数量级特征战胜了原来billion数量级特征的线性模型。
+关于深度学习的革命性再怎么强调都不为过。除了在现有的图像/语音识别中不断刷新state-of-the-art之外。在Google使用深度学习的AI给机器随机“看”了1000万个Youtube视频，猜猜它看到了什么？猫的脸！在地球的另一边，百度使用深度学习的广告CTR预估模型用10^3数量级特征战胜了原来10^11数量级特征的线性模型，后者刚好是十多年来百度最懂业务和最懂技术的一群人合力完成的杰作。在文章最后，我只想对机器学习界的同仁说一句：再不上船可就晚了。
