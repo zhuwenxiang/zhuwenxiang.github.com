@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Learning 大牛Bengio 教授在Reddit吐槽
+title: 深度学习大牛Bengio教授在Reddit吐槽
 date: 2014-03-07 14:20
 comments: true
 categories: 
