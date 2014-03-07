@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edwin Chen关于Netflix Prize的总结（译）
+title: Edwin Chen关于Netflix Prize的总结
 date: 2012-12-12 18:51
 comments: true
 categories: 
