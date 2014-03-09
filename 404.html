@@ -6,7 +6,6 @@ title: 404
 <strong>这里是小黑屋！</strong>您可以看看下面的文章列表
 </div>
 <div class="postsList wrapper">
-  {% capture post_year1 %}{{ 'now' | date: '%Y' }}{% endcapture %}
 <h2>{{ post_year1 }}</h2>
 <ul>
 {% for post in site.posts %}
