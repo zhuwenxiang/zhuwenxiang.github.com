@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 裁员报道两则
+title: 裁员报道若干则
 date: 2014-02-24 15:12
 comments: true
 categories: 
