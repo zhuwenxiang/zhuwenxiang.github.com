@@ -11,12 +11,11 @@ categories: hive
 ###hive 介绍
 
 * hive是什么？
-  ** hive是一个基于hadoop的数据仓库系统，提供一种机制把数据映射为结构化的table；
-  ** hive内含一种类SQL的Hive Query Language(HQL)语言，能够用简单的query做复杂的数据查询；
+  * hive是一个基于hadoop的数据仓库系统，提供一种机制把数据映射为结构化的table；
+  * hive内含一种类SQL的Hive Query Language(HQL)语言，能够用简单的query做复杂的数据查询；
 
 * hive应用场景是什么？
-** 非实时的海量数据分析/挖掘/建模
-** 非实时的海量数据分析/挖掘/建模
+* 非实时的海量数据分析/挖掘/建模
 
 ###hive VS hadoop mr program
 
