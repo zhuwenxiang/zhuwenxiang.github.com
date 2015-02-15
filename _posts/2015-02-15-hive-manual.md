@@ -15,23 +15,23 @@ categories: hive
   * hive内含一种类SQL的Hive Query Language(HQL)语言，能够用简单的query做复杂的数据查询；
 
 * hive应用场景是什么？
- * 非实时的海量数据分析/挖掘/建模
+  * 非实时的海量数据分析/挖掘/建模
 
 ###hive VS hadoop mr program
 
 * 优势
- * 内置丰富的通用操作算子和计算函数，能大幅降低开发成本，同时提高逻辑正确性；
- * 丰富数据模型可以简化数据组织、管理和访问的复杂度；
- * 类SQL描述的数据处理流程为“所思即所见，所见即所得”，便于理解和维护；
+  * 内置丰富的通用操作算子和计算函数，能大幅降低开发成本，同时提高逻辑正确性；
+  * 丰富数据模型可以简化数据组织、管理和访问的复杂度；
+  * 类SQL描述的数据处理流程为“所思即所见，所见即所得”，便于理解和维护；
 
 * 劣势
- * 数据操作不灵活，对于一些情况，一轮hadoop计算被迫要分成多个任务来完成；
- * 复杂数学计算实现困难，不直观 && 性能差；
- * 不适合访问外部数据，如dict和外部server；
+  * 数据操作不灵活，对于一些情况，一轮hadoop计算被迫要分成多个任务来完成；
+  * 复杂数学计算实现困难，不直观 && 性能差；
+  * 不适合访问外部数据，如dict和外部server；
 
 * 个人总结
- * hive适用于业务逻辑非常复杂的场合。
- * 实现同样逻辑，hive程序的代码行数基本上是hadoop原生程序的1/10左右。
+  * hive适用于业务逻辑非常复杂的场合。
+  * 实现同样逻辑，hive程序的代码行数基本上是hadoop原生程序的1/10左右。
 
 ### hive 学习曲线
 
@@ -46,9 +46,9 @@ categories: hive
 * hive元信息是“数据的数据”，用来描述table、partition、index以及其他信息的数据。
 
 * hive元信息存储在RDBMS中，常见访问方式如下：
- * signle user mode：本地连接并访问in-memory数据库------derby，用于单测；
- * multi user mode：网络连接并访问传统关系数据库------mysql，最常用；
- * remote server mode：通过thrift协议访问thrift server，并由server中转访问元数据库，用于非java客户端；
+  * signle user mode：本地连接并访问in-memory数据库------derby，用于单测；
+  * multi user mode：网络连接并访问传统关系数据库------mysql，最常用；
+  * remote server mode：通过thrift协议访问thrift server，并由server中转访问元数据库，用于非java客户端；
 
 ### hive 数据模型
 
@@ -146,19 +146,19 @@ describe test_table partition (data_date='20121106');
 hive内置丰富的操作符和通用函数：
 
 1. 操作符
- * 关系操作符，如=、\!=、>、<、is null、is not null、like、rlike
- * 数学操作符，如+、-、*、/、%、&、\|、^、\~
- * 逻辑操作符，如and、or、not、&&、\|、\!
- * 复杂类型操作符，如array\[iter\]、map\[key\]、struct.sub_item
+  * 关系操作符，如=、\!=、>、<、is null、is not null、like、rlike
+  * 数学操作符，如+、-、*、/、%、&、\|、^、\~
+  * 逻辑操作符，如and、or、not、&&、\|、\!
+  * 复杂类型操作符，如array\[iter\]、map\[key\]、struct.sub_item
 
 2. 函数
- * 数学函数，如rand()、ln()、sqrt()、abs()、sin()
- * 字符串函数，如concat_ws()、length()、lower()、ltrim()、reverse()
- * 日期函数，如year()、unix_timestamp()
- * 聚合函数，如count([distinct])、sum()、avg()、max()
- * 条件函数，if(condition, value_true, value_false)、case when a then b when c then d else e end、case a when b then c when d  then e else f end
- * 类型转换函数，如binary()、cast()
- * 复杂类型函数，如size()、sort_array()
+  * 数学函数，如rand()、ln()、sqrt()、abs()、sin()
+  * 字符串函数，如concat_ws()、length()、lower()、ltrim()、reverse()
+  * 日期函数，如year()、unix_timestamp()
+  * 聚合函数，如count([distinct])、sum()、avg()、max()
+  * 条件函数，if(condition, value_true, value_false)、case when a then b when c then d else e end、case a when b then c when d  then e else f end
+  * 类型转换函数，如binary()、cast()
+  * 复杂类型函数，如size()、sort_array()
 
 3. 相关命令行
 ```js
@@ -257,13 +257,13 @@ where sum_weight >= 1;
 ```
 
 * order by **VS** sort by
- * sort by是每个reduce做排序；
- * order by是对结果集合做排序，所以只有一个reduce；
+  * sort by是每个reduce做排序；
+  * order by是对结果集合做排序，所以只有一个reduce；
 
 * distributed by **VS** cluster by
- * distribute by对map结果按指定key做distribute，但reduce结果不会排序；
- * cluster by对map结果按指定key做distribute，同时会按key对reduce结果做排序；
- * 对于同一个key，cluster by == distribute by + order by，但distribute by和order by可以作用于不同字段，组合更加灵活；
+  * distribute by对map结果按指定key做distribute，但reduce结果不会排序；
+  * cluster by对map结果按指定key做distribute，同时会按key对reduce结果做排序；
+  * 对于同一个key，cluster by == distribute by + order by，但distribute by和order by可以作用于不同字段，组合更加灵活；
 
 * map reduce方式 custom user script
 
@@ -357,8 +357,8 @@ where src = 'b';
 ```
 
 * join是一个使用频繁、同时又比较耗时的操作，使用时需要注意：
- * 如果join时两个table都比较大，可以把较小的、或者key比较均匀的放在join左侧；
- * 如果join时一个table大，一个table小到可以放入内存，可以使用mapjoin，所有操作都会在map阶段完成；
+  * 如果join时两个table都比较大，可以把较小的、或者key比较均匀的放在join左侧；
+  * 如果join时一个table大，一个table小到可以放入内存，可以使用mapjoin，所有操作都会在map阶段完成；
 
 ```js
 from user_table join winfo_table on (user_table.user_id = winfo_table.user_id)
@@ -387,14 +387,14 @@ select winfo_table.winfo_id, idea_table.idea_id;
 * 全排序只会产生一个reduce任务，执行会特别慢，所以一般都会与limit一起使用，如果非要对全部结果做排序，可以使用TotalOrderPartitioner；
 * hive不太适合做笛卡尔积，因为计算时只会使用一个reduce任务，所以需要尽力避免，如果避不可避，可以参见上页的join部分；
 * 数据倾斜是map-reduce任务的一个大问题，同时也是一个很难解决的问题；
- * map端聚合，hive已经默认打开；
- * 设置参数 set hive.groupby.skewindata=true，可以把map结果随机分配到多个reduce中，之后再把输出结果输入到下一轮map-reduce任务；
- * 小表mapjoin，大表单独处理+union all；
- * sum() group by代替count distinct；
+  * map端聚合，hive已经默认打开；
+  * 设置参数 set hive.groupby.skewindata=true，可以把map结果随机分配到多个reduce中，之后再把输出结果输入到下一轮map-reduce任务；
+  * 小表mapjoin，大表单独处理+union all；
+  * sum() group by代替count distinct；
 
 * 对输出使用压缩，有利于降低硬盘I/O和网络负载；
- * 对map output，建议使用lzo或snappy；
- * 对reduce output，建议使用gzip或bzip2，同时必须使用sequence file作为table存储方式；
+  * 对map output，建议使用lzo或snappy；
+  * 对reduce output，建议使用gzip或bzip2，同时必须使用sequence file作为table存储方式；
 
 ### hive 扩展功能
 
