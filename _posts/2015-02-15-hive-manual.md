@@ -145,13 +145,13 @@ describe test_table partition (data_date='20121106');
 
 hive内置丰富的操作符和通用函数：
 
-1. 操作符
+* 操作符
   * 关系操作符，如=、\!=、>、<、is null、is not null、like、rlike
   * 数学操作符，如+、-、*、/、%、&、\|、^、\~
   * 逻辑操作符，如and、or、not、&&、\|、\!
   * 复杂类型操作符，如array\[iter\]、map\[key\]、struct.sub_item
 
-2. 函数
+* 函数
   * 数学函数，如rand()、ln()、sqrt()、abs()、sin()
   * 字符串函数，如concat_ws()、length()、lower()、ltrim()、reverse()
   * 日期函数，如year()、unix_timestamp()
@@ -161,6 +161,7 @@ hive内置丰富的操作符和通用函数：
   * 复杂类型函数，如size()、sort_array()
 
 3. 相关命令行
+
 ```js
 SHOW FUNCTIONS -- 列出目前hive中所有函数
 DESCRIBE FUNCTION function_name  -- 显示函数简单描述
@@ -319,10 +320,10 @@ using 'my_python_session_cutter.py' as (user_id, session_info);
 * 目前index主要应用于条件过滤场景，但功能还比较新，与index构建消耗的成本相比，获得的收益不大；
 * rcfile属于混合存储格式，对于只需要整个数据中某些列的场景会对性能提升；
 * 选择合适的map和reduce数目；
- * map任务数目可以就用默认值；reduce任务数目比较关键，对整体时间起关键作用：
- * 对数据量比较小的场景，可以设置每个reduce处理的数据量，命令为set hive.exec.reducers.bytes.per.reducer=xxx；
- * 对数据量比较大的场景，一般限于公司资源，会设置为1000，命令为set mapred.reduce.tasks=xxx；
- * 在hive中会默认合并大量的输入小文件；
+  * map任务数目可以就用默认值；reduce任务数目比较关键，对整体时间起关键作用：
+  * 对数据量比较小的场景，可以设置每个reduce处理的数据量，命令为set hive.exec.reducers.bytes.per.reducer=xxx；
+  * 对数据量比较大的场景，一般限于公司资源，会设置为1000，命令为set mapred.reduce.tasks=xxx；
+  * 在hive中会默认合并大量的输入小文件；
 
 能提升性能的hive语言写法：
 
@@ -464,11 +465,13 @@ DROP TEMPORARY FUNCTION IF EXISTS YourUDFName; -- 卸载
 * hive运行时需要临时空间/tmp，默认值是/tmp/hive-$\{user.name\}，如果这个空间满了的话，会使得hive任务失败。修改hive.exec.scratchdir配置项可解决。
 * 当多个session执行hive任务并且add cachearchive同名文件的时候，有任务失败的风险，因为覆盖hdfs上的文件使得文件时间戳改变就会报错。
 * hive没有not in函数，实现方式可以
+
 ```js
 select a.key from a left outer join b on a.key=b.key where b.key1 is null;
 ```
 
 * 一次执行多个count可以 
+
 ```js
 select count(case when type = 1 then 1 end), count(case when type = 2 then 1 end) from one_test_table;
 ```
@@ -478,11 +481,13 @@ select count(case when type = 1 then 1 end), count(case when type = 2 then 1 end
 * 当数据倾斜时的计数 group by比count(distinct xx)要快得多
 * join操作时，分区过滤需要放到子查询或on语句中，不能放到on后面的where里。
 * 查看表的物理地址
+
 ```js
 Describe extended one_test_table; 
 ```
 
 * 下载表的物理数据
+
 ```js
 --step1 hive 步骤
 hive -e "set hive.exec.compress.output = false;
@@ -497,6 +502,7 @@ awk '{print $1"\t"$2;}' > ~/one_test_table.txt
 * 行转列使用的group_concat函数 
 
 * 列转行使用explode函数
+
 ```js
 select id, item_id from (
     select id, split(get_json_object(features, '$.items'),',') as itemlist
