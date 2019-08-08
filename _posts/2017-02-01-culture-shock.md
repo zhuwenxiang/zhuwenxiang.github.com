@@ -1,6 +1,6 @@
 ---
 layout: post
-title: culture shock @ Thailand, Japan, America
+title: culture shock @ Thailand, Japan, America, Vietnam
 date: 2017-02-01 02:01
 comments: true
 categories: 生活
